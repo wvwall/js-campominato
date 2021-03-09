@@ -1,8 +1,21 @@
 
 var bombe = [];
 var vite = [];
-var maxNumber = 100;
-console.log(bombe);
+var maxNumber = prompt("Scegli la difficoltà: PRINCIPIANTE=100 INTERMEDIO=80 CAMPIONE=50" );
+ switch (maxNumber) {
+     case 100 :
+         maxNumber = 100;
+      break;  
+    case 80 :
+        maxNumber = 80;
+    break;
+    case 50:
+        maxNumber = 50;
+ }
+ console.log("Hai scelto la modalità con "+ maxNumber + " numeri.");
+
+
+console.log(bombe); //check
 creaBombe(bombe, maxNumber);
 var risultato = play(bombe, vite, maxNumber);
 console.log("GAME OVER: Quando smetti di giocare non sei adulto, sei spento.");
