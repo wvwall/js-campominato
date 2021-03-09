@@ -42,6 +42,7 @@ function randomNumberRange(min, max) {
              array.push(numero);
          }
      }
+     return array;
  }
 
  //chiedere all'utente di inserire un numero alla volta e verificare 
